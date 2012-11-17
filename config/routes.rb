@@ -1,7 +1,14 @@
 Swc::Application.routes.draw do
+  root :to => 'pages#home'
+
+  resources :recipients
+
+  resources :gifts
+
   resources :messages
 
   resources :senders
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
